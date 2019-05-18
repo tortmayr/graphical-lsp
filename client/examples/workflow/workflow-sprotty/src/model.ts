@@ -14,9 +14,13 @@
  * SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
  ********************************************************************************/
 import {
+    BorderLayoutable,
+    borderLayoutFeature,
+    BorderPlacement,
     Bounds,
     boundsFeature,
     CommandExecutor,
+    DEFAULT_BORDER_PLACEMENT,
     DiamondNode,
     executeCommandFeature,
     Expandable,
@@ -28,6 +32,7 @@ import {
     Nameable,
     nameFeature,
     RectangularNode,
+    RectangularPort,
     SEdge,
     SShapeElement
 } from "@glsp/sprotty-client/lib";
@@ -78,5 +83,13 @@ export class Icon extends SShapeElement implements LayoutContainer, CommandExecu
         return feature === executeCommandFeature
             || feature === boundsFeature || feature === layoutContainerFeature
             || feature === layoutableChildFeature || feature === fadeFeature;
+    }
+}
+
+export class BorderPort extends RectangularPort implements BorderLayoutable {
+    borderPlacement: BorderPlacement = DEFAULT_BORDER_PLACEMENT;
+
+    hasFeature(feature: symbol) {
+        return feature === borderLayoutFeature || super.hasFeature(feature);
     }
 }

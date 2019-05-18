@@ -13,14 +13,13 @@
  *
  * SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
  ********************************************************************************/
-import { SGraph } from "sprotty/lib";
+import { ContainerModule } from "inversify";
+import { TYPES } from "sprotty";
 
-import { Saveable, saveFeature } from "../features/save/model";
+import { BorderLayoutDecorator } from "./border-layout";
 
-export class GLSPGraph extends SGraph implements Saveable {
-    dirty: boolean;
+const borderLayoutModule = new ContainerModule(bind => {
+    bind(TYPES.IVNodeDecorator).to(BorderLayoutDecorator).inSingletonScope();
+});
 
-    hasFeature(feature: symbol) {
-        return feature === saveFeature || super.hasFeature(feature);
-    }
-}
+export default borderLayoutModule;

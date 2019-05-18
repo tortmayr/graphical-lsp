@@ -16,6 +16,7 @@
 import "../css/diagram.css";
 
 import {
+    borderLayoutModule,
     boundsModule,
     buttonModule,
     commandPaletteModule,
@@ -67,7 +68,7 @@ import {
 import executeCommandModule from "@glsp/sprotty-client/lib/features/execute/di.config";
 import { Container, ContainerModule } from "inversify";
 
-import { ActivityNode, Icon, TaskNode, WeightedEdge } from "./model";
+import { ActivityNode, BorderPort, Icon, TaskNode, WeightedEdge } from "./model";
 import { WorkflowModelFactory } from "./model-factory";
 import { IconView, TaskNodeView, WeightedEdgeView, WorkflowEdgeView } from "./workflow-views";
 
@@ -96,6 +97,7 @@ const workflowDiagramModule = new ContainerModule((bind, unbind, isBound, rebind
     configureModelElement(context, 'activityNode:merge', ActivityNode, DiamondNodeView);
     configureModelElement(context, 'activityNode:decision', ActivityNode, DiamondNodeView);
     configureModelElement(context, 'node', RectangularNode, RectangularNodeView);
+    configureModelElement(context, 'port', BorderPort, RectangularNodeView);
 });
 
 export default function createContainer(widgetId: string): Container {
@@ -104,7 +106,7 @@ export default function createContainer(widgetId: string): Container {
     container.load(decorationModule, validationModule, defaultModule, glspMouseToolModule, defaultGLSPModule, glspSelectModule, boundsModule, viewportModule,
         hoverModule, fadeModule, exportModule, expandModule, openModule, buttonModule, modelSourceModule,
         workflowDiagramModule, saveModule, executeCommandModule, toolFeedbackModule, modelHintsModule,
-        commandPaletteModule, glspCommandPaletteModule, paletteModule, requestResponseModule, routingModule, edgeLayoutModule);
+        commandPaletteModule, glspCommandPaletteModule, paletteModule, requestResponseModule, routingModule, edgeLayoutModule, borderLayoutModule);
 
     overrideGLSPViewerOptions(container, {
         needsClientLayout: true,

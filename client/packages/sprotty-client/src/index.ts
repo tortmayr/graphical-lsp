@@ -14,6 +14,7 @@
  * SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
  ********************************************************************************/
 import defaultGLSPModule from "./base/di.config";
+import borderLayoutModule from "./features/border-layout/di.config";
 import glspCommandPaletteModule from "./features/command-palette/di.config";
 import executeModule from "./features/execute/di.config";
 import modelHintsModule from "./features/hints/di.config";
@@ -31,6 +32,8 @@ export * from './model-source/websocket-diagram-server';
 export * from './base/model/update-model-command';
 export * from './base/tool-manager/tool-manager-action-handler';
 export * from './base/views/viewer-options';
+export * from './features/border-layout/border-layout';
+export * from './features/border-layout/model';
 export * from './features/change-bounds/model';
 export * from './features/command-palette/action-definitions';
 export * from './features/command-palette/action-provider';
@@ -54,15 +57,17 @@ export * from './features/tools/creation-tool';
 export * from './features/tools/default-tools';
 export * from './features/tools/delete-tool';
 export * from './features/validation/validate';
-export * from './lib/model';
+export * from './graph/model';
 export * from './types';
 export * from './utils/array-utils';
 export * from './utils/marker';
 export * from './utils/smodel-util';
 export * from './utils/viewpoint-util';
+export * from './utils/geometry';
+
 export {
     validationModule, saveModule, executeModule, paletteModule, toolFeedbackModule, defaultGLSPModule, modelHintsModule, glspCommandPaletteModule, requestResponseModule, //
-    glspSelectModule, glspMouseToolModule
+    glspSelectModule, glspMouseToolModule, borderLayoutModule
 };
 
 
