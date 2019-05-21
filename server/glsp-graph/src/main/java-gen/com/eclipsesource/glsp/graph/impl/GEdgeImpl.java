@@ -40,8 +40,9 @@ import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
- * <!-- begin-user-doc --> An implementation of the model object
- * '<em><b>GEdge</b></em>'. <!-- end-user-doc -->
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>GEdge</b></em>'.
+ * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
@@ -51,8 +52,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link com.eclipsesource.glsp.graph.impl.GEdgeImpl#getChildren <em>Children</em>}</li>
  *   <li>{@link com.eclipsesource.glsp.graph.impl.GEdgeImpl#getParent <em>Parent</em>}</li>
  *   <li>{@link com.eclipsesource.glsp.graph.impl.GEdgeImpl#getTrace <em>Trace</em>}</li>
- *   <li>{@link com.eclipsesource.glsp.graph.impl.GEdgeImpl#getSourceId <em>Source Id</em>}</li>
- *   <li>{@link com.eclipsesource.glsp.graph.impl.GEdgeImpl#getTargetId <em>Target Id</em>}</li>
  *   <li>{@link com.eclipsesource.glsp.graph.impl.GEdgeImpl#getRoutingPoints <em>Routing Points</em>}</li>
  *   <li>{@link com.eclipsesource.glsp.graph.impl.GEdgeImpl#getSource <em>Source</em>}</li>
  *   <li>{@link com.eclipsesource.glsp.graph.impl.GEdgeImpl#getTarget <em>Target</em>}</li>
@@ -62,9 +61,9 @@ import org.eclipse.emf.ecore.util.InternalEList;
  */
 public class GEdgeImpl extends MinimalEObjectImpl.Container implements GEdge {
 	/**
-	 * The default value of the '{@link #getId() <em>Id</em>}' attribute. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * The default value of the '{@link #getId() <em>Id</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getId()
 	 * @generated
 	 * @ordered
@@ -72,9 +71,9 @@ public class GEdgeImpl extends MinimalEObjectImpl.Container implements GEdge {
 	protected static final String ID_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getId() <em>Id</em>}' attribute. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * The cached value of the '{@link #getId() <em>Id</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getId()
 	 * @generated
 	 * @ordered
@@ -83,7 +82,8 @@ public class GEdgeImpl extends MinimalEObjectImpl.Container implements GEdge {
 
 	/**
 	 * The cached value of the '{@link #getCssClasses() <em>Css Classes</em>}' attribute list.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getCssClasses()
 	 * @generated
 	 * @ordered
@@ -92,7 +92,8 @@ public class GEdgeImpl extends MinimalEObjectImpl.Container implements GEdge {
 
 	/**
 	 * The cached value of the '{@link #getChildren() <em>Children</em>}' containment reference list.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getChildren()
 	 * @generated
 	 * @ordered
@@ -100,9 +101,9 @@ public class GEdgeImpl extends MinimalEObjectImpl.Container implements GEdge {
 	protected EList<GModelElement> children;
 
 	/**
-	 * The default value of the '{@link #getTrace() <em>Trace</em>}' attribute. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * The default value of the '{@link #getTrace() <em>Trace</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getTrace()
 	 * @generated
 	 * @ordered
@@ -110,9 +111,9 @@ public class GEdgeImpl extends MinimalEObjectImpl.Container implements GEdge {
 	protected static final String TRACE_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getTrace() <em>Trace</em>}' attribute. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * The cached value of the '{@link #getTrace() <em>Trace</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getTrace()
 	 * @generated
 	 * @ordered
@@ -120,26 +121,9 @@ public class GEdgeImpl extends MinimalEObjectImpl.Container implements GEdge {
 	protected String trace = TRACE_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getSourceId() <em>Source Id</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #getSourceId()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String SOURCE_ID_EDEFAULT = null;
-
-	/**
-	 * The default value of the '{@link #getTargetId() <em>Target Id</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #getTargetId()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String TARGET_ID_EDEFAULT = null;
-
-	/**
 	 * The cached value of the '{@link #getRoutingPoints() <em>Routing Points</em>}' containment reference list.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getRoutingPoints()
 	 * @generated
 	 * @ordered
@@ -148,7 +132,8 @@ public class GEdgeImpl extends MinimalEObjectImpl.Container implements GEdge {
 
 	/**
 	 * The cached value of the '{@link #getSource() <em>Source</em>}' reference.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getSource()
 	 * @generated
 	 * @ordered
@@ -157,7 +142,8 @@ public class GEdgeImpl extends MinimalEObjectImpl.Container implements GEdge {
 
 	/**
 	 * The cached value of the '{@link #getTarget() <em>Target</em>}' reference.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getTarget()
 	 * @generated
 	 * @ordered
@@ -165,7 +151,8 @@ public class GEdgeImpl extends MinimalEObjectImpl.Container implements GEdge {
 	protected GModelElement target;
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	protected GEdgeImpl() {
@@ -173,7 +160,8 @@ public class GEdgeImpl extends MinimalEObjectImpl.Container implements GEdge {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -182,7 +170,8 @@ public class GEdgeImpl extends MinimalEObjectImpl.Container implements GEdge {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -191,7 +180,8 @@ public class GEdgeImpl extends MinimalEObjectImpl.Container implements GEdge {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -203,7 +193,8 @@ public class GEdgeImpl extends MinimalEObjectImpl.Container implements GEdge {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -215,7 +206,8 @@ public class GEdgeImpl extends MinimalEObjectImpl.Container implements GEdge {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -228,7 +220,8 @@ public class GEdgeImpl extends MinimalEObjectImpl.Container implements GEdge {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -239,7 +232,8 @@ public class GEdgeImpl extends MinimalEObjectImpl.Container implements GEdge {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public NotificationChain basicSetParent(GModelElement newParent, NotificationChain msgs) {
@@ -248,7 +242,8 @@ public class GEdgeImpl extends MinimalEObjectImpl.Container implements GEdge {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -271,7 +266,8 @@ public class GEdgeImpl extends MinimalEObjectImpl.Container implements GEdge {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -280,7 +276,8 @@ public class GEdgeImpl extends MinimalEObjectImpl.Container implements GEdge {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -292,31 +289,8 @@ public class GEdgeImpl extends MinimalEObjectImpl.Container implements GEdge {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated NOT
-	 */
-	@Override
-	public String getSourceId() {
-		if (this.getSource() != null) {
-			return this.getSource().getId();
-		}
-		return null;
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated NOT
-	 */
-	@Override
-	public String getTargetId() {
-		if (this.getTarget() != null) {
-			return this.getTarget().getId();
-		}
-		return null;
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -328,7 +302,8 @@ public class GEdgeImpl extends MinimalEObjectImpl.Container implements GEdge {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -346,7 +321,8 @@ public class GEdgeImpl extends MinimalEObjectImpl.Container implements GEdge {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public GModelElement basicGetSource() {
@@ -354,7 +330,8 @@ public class GEdgeImpl extends MinimalEObjectImpl.Container implements GEdge {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -366,7 +343,8 @@ public class GEdgeImpl extends MinimalEObjectImpl.Container implements GEdge {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -384,7 +362,8 @@ public class GEdgeImpl extends MinimalEObjectImpl.Container implements GEdge {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public GModelElement basicGetTarget() {
@@ -392,7 +371,8 @@ public class GEdgeImpl extends MinimalEObjectImpl.Container implements GEdge {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -404,7 +384,8 @@ public class GEdgeImpl extends MinimalEObjectImpl.Container implements GEdge {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -422,7 +403,8 @@ public class GEdgeImpl extends MinimalEObjectImpl.Container implements GEdge {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -439,7 +421,8 @@ public class GEdgeImpl extends MinimalEObjectImpl.Container implements GEdge {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -453,7 +436,8 @@ public class GEdgeImpl extends MinimalEObjectImpl.Container implements GEdge {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -469,10 +453,6 @@ public class GEdgeImpl extends MinimalEObjectImpl.Container implements GEdge {
 			return getParent();
 		case GraphPackage.GEDGE__TRACE:
 			return getTrace();
-		case GraphPackage.GEDGE__SOURCE_ID:
-			return getSourceId();
-		case GraphPackage.GEDGE__TARGET_ID:
-			return getTargetId();
 		case GraphPackage.GEDGE__ROUTING_POINTS:
 			return getRoutingPoints();
 		case GraphPackage.GEDGE__SOURCE:
@@ -488,7 +468,8 @@ public class GEdgeImpl extends MinimalEObjectImpl.Container implements GEdge {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -527,7 +508,8 @@ public class GEdgeImpl extends MinimalEObjectImpl.Container implements GEdge {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -562,7 +544,8 @@ public class GEdgeImpl extends MinimalEObjectImpl.Container implements GEdge {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -578,10 +561,6 @@ public class GEdgeImpl extends MinimalEObjectImpl.Container implements GEdge {
 			return getParent() != null;
 		case GraphPackage.GEDGE__TRACE:
 			return TRACE_EDEFAULT == null ? trace != null : !TRACE_EDEFAULT.equals(trace);
-		case GraphPackage.GEDGE__SOURCE_ID:
-			return SOURCE_ID_EDEFAULT == null ? getSourceId() != null : !SOURCE_ID_EDEFAULT.equals(getSourceId());
-		case GraphPackage.GEDGE__TARGET_ID:
-			return TARGET_ID_EDEFAULT == null ? getTargetId() != null : !TARGET_ID_EDEFAULT.equals(getTargetId());
 		case GraphPackage.GEDGE__ROUTING_POINTS:
 			return routingPoints != null && !routingPoints.isEmpty();
 		case GraphPackage.GEDGE__SOURCE:
@@ -593,7 +572,8 @@ public class GEdgeImpl extends MinimalEObjectImpl.Container implements GEdge {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -612,4 +592,4 @@ public class GEdgeImpl extends MinimalEObjectImpl.Container implements GEdge {
 		return result.toString();
 	}
 
-} // GEdgeImpl
+} //GEdgeImpl
