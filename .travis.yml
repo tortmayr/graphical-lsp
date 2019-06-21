@@ -1,6 +1,6 @@
 branches:
         only:
-        - master
+        - test-branch
 matrix:
   include:
     - language: java
@@ -10,7 +10,6 @@ matrix:
       cache:
         directories:
           - "$HOME/.m2/repository"
-      install: false
       script:
         - mvn clean verify
       before_deploy:
@@ -21,7 +20,7 @@ matrix:
         skip_cleanup: true
         script: bash ../scripts/deployMaven.sh
         on:
-          branch: master
+          branch: test-branch
       after_deploy:
         - cd  ../scripts
         - ./deployP2.sh
@@ -33,7 +32,6 @@ matrix:
     - language: node_js
       node_js:
         - "8"
-      install: false
       before_script:
         - cd client
       cache:
@@ -48,5 +46,5 @@ matrix:
         provider: script
         script: bash ../scripts/deployNPM.sh
         on:
-          branch: master
+          branch: test-branch
         skip_cleanup: true
